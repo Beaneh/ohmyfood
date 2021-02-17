@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+$font-stack: Shrikhand, Roboto;
+$primary-color: #f2f2f2;
+$colors:(
+    purple: #9356DC,
+    pink: #FF79DA,
+    mint: #99E2D0,
+);
+
+// @each $colour, $hex in $colours {
+//     .btn--#{$colour} {
+//         background-color: $hex;
+//     }
+// }
 
 * {
     box-sizing: border-box;
@@ -13,14 +28,14 @@ html, body {
 .logo {
     width: auto;
     height: 30px;
-    margin: 0 100px;
 }
 
 .finder {
     font-size: 16px;
-    background-color: #D3D3D3;
+    background-color: darken($color: $primary-color, $amount: 10px);
     text-align: center;
     padding: 10px;
+    font-weight: bold;
 }
 
 .location {
@@ -30,7 +45,7 @@ html, body {
 
 .explore {
     text-align: center;
-    background-color: #f2f2f2;
+    background-color: $primary-color;
     padding: 10px;
 }
 
@@ -45,7 +60,7 @@ html, body {
     padding: 10px;
     height: 50px;
     width: auto;
-    background-color: #FF79DA;
+    background-color: mix(violet, pink);
     color: white;
     outline: none;
 }
@@ -57,21 +72,21 @@ html, body {
     padding: 10px;
 }
 
-.instruction-btn {
+.instruction-btns {
     display: flex;
     flex-direction: column;
-}
+    gap: 40px;
 
-.choose {
-    margin-bottom: 20px;
-    border: 20px;
-    background-color: #f2f2f2;
-    padding: 22px;
-    outline: none;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 20px;
-    text-align: start;
+    button {
+        border: 20px;
+        background-color: $primary-color;
+        padding: 22px;
+        outline: none;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 20px;
+        text-align: start;    
+    }
 }
 
 .phone {
@@ -79,33 +94,9 @@ html, body {
     color: #808080;
 }
 
-.create {
-    margin: 20px 0;
-    border: 20px;
-    background-color: #f2f2f2;
-    padding: 22px;
-    outline: none;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 20px;
-    text-align: start;
-}
-
 .list {
     padding: 0 10px;
     color: #808080;
-}
-
-.enjoy {
-    margin-top: 20px;
-    border: 20px;
-    background-color: #f2f2f2;
-    padding: 22px;
-    outline: none;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 20px;
-    text-align: start;
 }
 
 .store {
@@ -118,24 +109,27 @@ html, body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
     cursor: pointer;
+    margin: 18px 0;
 }
 
 .card-content {
-    padding: 5px;
+    padding: 15px;
 }
 
 .card-title {
     font-size: 18px;
     justify-content: left;
+    margin: 0;
 }
 
 .city {
-    font-size: 14px;
+    font-size: 16px;
+    margin: 5px 0;
 }
 
 .restaurant {
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: $primary-color;
 }
 
 .restaurant-img {
@@ -160,12 +154,12 @@ footer {
 .ftr-content {
     list-style: none;
     padding-left: 20px;
-}
 
-.ftr-content a {
-    text-decoration: none;
-    line-height: 30px;
-    color: white;
+    a {
+        text-decoration: none;
+        line-height: 30px;
+        color: white;
+    }
 }
 
 .ftr-icon {
