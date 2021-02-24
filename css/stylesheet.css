@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* This file contains the base style for the site pages */
 * {
   box-sizing: border-box;
 }
@@ -10,35 +11,8 @@ html, body {
   font-family: roboto;
 }
 
-.logo {
-  width: auto;
-  height: 30px;
-}
-
-.finder {
-  font-size: 16px;
-  background-color: #d9d9d9;
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-}
-
-.location {
-  display: inline-block;
-  padding: 0 10px;
-}
-
-.explore {
-  text-align: center;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
-
-.desc {
-  font-size: 16px;
-}
-
-.explore-our-rest {
+/* Styles for elemnts that are commons between different pages */
+.purple-button {
   font-size: 16px;
   font-weight: bold;
   border-radius: 20px;
@@ -48,6 +22,47 @@ html, body {
   background-color: #f7a1dd;
   color: white;
   outline: none;
+}
+
+footer {
+  background-color: black;
+  padding: 15px 10px;
+}
+
+.ftr-title {
+  padding-left: 20px;
+  color: white;
+}
+
+.ftr-content {
+  list-style: none;
+  padding-left: 20px;
+}
+.ftr-content a {
+  text-decoration: none;
+  line-height: 30px;
+  color: white;
+}
+
+.ftr-icon {
+  color: white;
+  padding: 5px;
+}
+
+.explore {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 10px 0;
+  font-size: 16px;
+  background-color: #d9d9d9;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 16px;
 }
 
 .instructions {
@@ -125,29 +140,9 @@ html, body {
   border-top-right-radius: 20px;
 }
 
-footer {
-  background-color: black;
-  padding: 15px 10px;
-}
-
-.ftr-title {
-  padding-left: 20px;
-  color: white;
-}
-
-.ftr-content {
-  list-style: none;
-  padding-left: 20px;
-}
-.ftr-content a {
-  text-decoration: none;
-  line-height: 30px;
-  color: white;
-}
-
-.ftr-icon {
-  color: white;
-  padding: 5px;
+.logo {
+  width: auto;
+  height: 30px;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
