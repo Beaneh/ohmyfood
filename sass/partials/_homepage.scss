@@ -1,3 +1,12 @@
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    height: 30px;
+    text-align: center;
+}
 
 .explore {
   display: flex;
@@ -7,12 +16,15 @@
   background-color: $primary-color;
   padding: 10px 0;
   font-size: 16px;
-  background-color: darken($color: $primary-color, $amount: 10px);
+  background-color: darken($color: $primary-color, $amount: 5px);
   font-weight: bold;
 }
 
 #hero-section {
-  
+  text-align: center;
+  background-color: $primary-color;
+  margin: 0%;
+  padding: 10px 10px 50px 10px;
 }
 
 .desc {
@@ -39,7 +51,7 @@
       font-size: 14px;
       font-weight: bold;
       border-radius: 20px;
-      text-align: start;    
+      text-align: center;    
   }
 }
 
@@ -58,7 +70,7 @@
   color: #808080;
 }
 
-.card {
+.cards {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
@@ -68,17 +80,17 @@
 
 .card-content {
   padding: 15px;
-}
 
-.card-title {
-  font-size: 18px;
-  justify-content: left;
-  margin: 0;
-}
+  .cards-title {
+    font-size: 18px;
+    margin: 0;
+    font-family: roboto
+    }   
 
-.city {
-  font-size: 16px;
-  margin: 5px 0;
+  .city {
+    font-size: 16px;
+    margin: 5px 0;
+    }
 }
 
 .restaurant {

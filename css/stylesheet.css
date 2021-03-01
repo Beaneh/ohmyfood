@@ -22,6 +22,7 @@ html, body {
   background-color: #f7a1dd;
   color: white;
   outline: none;
+  text-align: center;
 }
 
 footer {
@@ -49,6 +50,16 @@ footer {
   padding: 5px;
 }
 
+header {
+  text-align: center;
+  padding: 10px;
+}
+
+.logo {
+  height: 30px;
+  text-align: center;
+}
+
 .explore {
   display: flex;
   flex-direction: row;
@@ -57,8 +68,15 @@ footer {
   background-color: #f2f2f2;
   padding: 10px 0;
   font-size: 16px;
-  background-color: #d9d9d9;
+  background-color: #e5e5e5;
   font-weight: bold;
+}
+
+#hero-section {
+  text-align: center;
+  background-color: #f2f2f2;
+  margin: 0%;
+  padding: 10px 10px 50px 10px;
 }
 
 .desc {
@@ -85,7 +103,7 @@ footer {
   font-size: 14px;
   font-weight: bold;
   border-radius: 20px;
-  text-align: start;
+  text-align: center;
 }
 
 .phone {
@@ -103,7 +121,7 @@ footer {
   color: #808080;
 }
 
-.card {
+.cards {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 20px;
@@ -114,14 +132,12 @@ footer {
 .card-content {
   padding: 15px;
 }
-
-.card-title {
+.card-content .cards-title {
   font-size: 18px;
-  justify-content: left;
   margin: 0;
+  font-family: roboto;
 }
-
-.city {
+.card-content .city {
   font-size: 16px;
   margin: 5px 0;
 }
@@ -140,9 +156,58 @@ footer {
   border-top-right-radius: 20px;
 }
 
-.logo {
-  width: auto;
-  height: 30px;
+header {
+  text-align: center;
+  padding: 10px;
+}
+
+.img {
+  height: 250px;
+  width: 100%;
+}
+
+.card {
+  background-color: #f2f2f2;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 15px;
+}
+.card .card-title {
+  font-family: Shrikhand;
+  padding: 20px 20px 0 10px;
+  font-size: 35px;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+section h2 {
+  font-size: large;
+  font-family: Roboto;
+  margin: 40px 0px 20px 5px;
+  font-weight: normal;
+  text-decoration: underline solid 5px #99E2D0;
+}
+section h3 {
+  padding: 0%;
+  margin: 0%;
+}
+section p {
+  padding: 5px 0px;
+  margin: 0%;
+  display: inline-block;
+}
+section span {
+  font-weight: bold;
+}
+section .menu-card {
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

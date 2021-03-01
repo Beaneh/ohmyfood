@@ -8,16 +8,5 @@
 @import "partials/footer";
 
 @import "partials/homepage";
+@import "partials/restaurant"
 
-
-// @each $colour, $hex in $colours {
-//     .btn--#{$colour} {
-//         background-color: $hex;
-//     }
-// }
-
-
-.logo {
-    width: auto;
-    height: 30px;
-}
