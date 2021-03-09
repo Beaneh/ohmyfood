@@ -3,12 +3,13 @@
 .purple-button {
   font-size: 16px;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 50px;
   padding: 10px;
   height: 50px;
   width: auto;
-  background-color: mix(pink, violet);
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   outline: none;
   text-align: center;
+  border: 0;
 }  

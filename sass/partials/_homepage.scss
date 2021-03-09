@@ -14,7 +14,7 @@ header {
   gap: 10px;
   justify-content: center;
   background-color: $primary-color;
-  padding: 10px 0;
+  padding: 16px 0;
   font-size: 16px;
   background-color: darken($color: $primary-color, $amount: 5px);
   font-weight: bold;
@@ -24,11 +24,22 @@ header {
   text-align: center;
   background-color: $primary-color;
   margin: 0%;
-  padding: 10px 10px 50px 10px;
+  padding: 27px 30px 58px 30px;
+
+  h2 {
+      font-size: 30px;
+  }
+
+  .purple-button {
+    // height: 50px;
+    // width: auto;
+    padding: 20px;
+  }
 }
 
 .desc {
-  font-size: 16px;
+  font-size: 20px;
+  padding: 30px 0 32px 0;
 }
 
 .instructions {
@@ -48,10 +59,9 @@ header {
       background-color: $primary-color;
       padding: 22px;
       outline: none;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: bold;
       border-radius: 20px;
-      text-align: center;    
   }
 }
 
@@ -84,7 +94,7 @@ header {
   .cards-title {
     font-size: 18px;
     margin: 0;
-    font-family: roboto
+    font-family: roboto;
     }   
 
   .city {
