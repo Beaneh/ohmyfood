@@ -112,9 +112,6 @@ header {
   font-weight: bold;
   border-radius: 20px;
 }
-.instruction-btns button:hover {
-  background-color: #e4d5f6;
-}
 
 .phone {
   padding: 0 10px;
@@ -139,15 +136,8 @@ header {
   margin: 18px 0;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 .card-content {
   padding: 15px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
 }
 .card-content .cards-title {
   font-size: 18px;
@@ -157,12 +147,6 @@ a {
 .card-content .city {
   font-size: 16px;
   margin: 5px 0;
-}
-.card-content a {
-  font-size: 25px;
-}
-.card-content .far:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
 }
 
 .restaurant {
@@ -182,12 +166,6 @@ a {
 header {
   text-align: center;
   padding: 10px;
-  position: relative;
-}
-header i {
-  position: absolute;
-  top: 20px;
-  left: 23px;
 }
 
 .img {
@@ -230,12 +208,7 @@ section h2 {
   font-family: Roboto;
   margin: 40px 0px 20px 5px;
   font-weight: normal;
-  border-bottom: 5px #99E2D0;
-  border-style: solid;
-  width: 40px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  text-decoration: underline solid 5px #99E2D0;
 }
 section h3 {
   padding: 0%;
@@ -246,7 +219,7 @@ section p {
   margin: 0%;
   display: inline-block;
 }
-section .price {
+section span {
   font-weight: bold;
 }
 section .menu-card {
@@ -254,10 +227,6 @@ section .menu-card {
   border-radius: 20px;
   cursor: pointer;
   padding: 10px;
-}
-section .fas {
-  color: white;
-  background-color: #99E2D0;
 }
 
 .order-btn {
