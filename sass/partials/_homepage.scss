@@ -63,6 +63,10 @@ header {
       font-weight: bold;
       border-radius: 20px;
   }
+
+  button:hover {
+    background-color: lighten($color: #9356DC, $amount: 30px);
+  }
 }
 
 .phone {
@@ -88,19 +92,34 @@ header {
   margin: 18px 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .card-content {
   padding: 15px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 
   .cards-title {
     font-size: 18px;
     margin: 0;
     font-family: roboto;
-    }   
+    }
 
   .city {
     font-size: 16px;
     margin: 5px 0;
     }
+
+  a {
+    font-size: 25px;
+  }
+
+  .far:hover {
+    background: linear-gradient(#9356DC, #FF79DA);
+  }
 }
 
 .restaurant {

@@ -1,6 +1,13 @@
 header {
     text-align: center;
     padding: 10px;
+    position: relative;
+   
+    i {
+      position: absolute;
+      top: 20px;
+      left: 23px;
+    }
 }
 
 .img {
@@ -46,7 +53,12 @@ section {
     font-family: Roboto;
     margin: 40px 0px 20px 5px;
     font-weight: normal;
-    text-decoration: underline solid 5px #99E2D0;
+    border-bottom: 5px #99E2D0;
+    border-style: solid;
+    width: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
   }
 
   h3 {
@@ -60,7 +72,7 @@ section {
       display: inline-block;
   }
 
-  span {
+  .price {
       font-weight: bold;
   }
 
@@ -69,6 +81,11 @@ section {
     border-radius: 20px;
     cursor: pointer;
     padding: 10px;
+  }
+
+  .fas {
+    color: white;
+    background-color: #99E2D0;
   }
 }
 
