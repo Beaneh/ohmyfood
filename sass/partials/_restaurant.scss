@@ -1,6 +1,14 @@
 header {
     text-align: center;
     padding: 10px;
+    position: relative;
+
+    a {
+      position: absolute;
+      padding: 3px 10px;
+      left: 10px;
+      top: 15px;
+    }
 }
 
 .img {
@@ -46,7 +54,17 @@ section {
     font-family: Roboto;
     margin: 40px 0px 20px 5px;
     font-weight: normal;
-    text-decoration: underline solid 5px #99E2D0;
+    margin-bottom: -10px;
+    // text-decoration: underline solid 5px #99E2D0;
+  }
+
+  hr.section-underline {
+    width: 40px;
+    height: 3px;
+    background-color: #99E2D0;
+    border: none;
+    margin: 0;
+    margin-left: 5px;
   }
 
   h3 {
