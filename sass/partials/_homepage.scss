@@ -112,13 +112,19 @@ a {
     font-size: 16px;
     margin: 5px 0;
     }
-
-  a {
-    font-size: 25px;
+  
+  .fas {
+    display: none;
+    position: absolute;
+    top: 1187px;
   }
 
-  .far:hover {
-    background: linear-gradient(#9356DC, #FF79DA);
+  .far {
+    display: block;
+  }
+
+  .fas:hover {
+    display: block;
   }
 }
 

@@ -158,11 +158,16 @@ a {
   font-size: 16px;
   margin: 5px 0;
 }
-.card-content a {
-  font-size: 25px;
+.card-content .fas {
+  display: none;
+  position: absolute;
+  top: 1187px;
 }
-.card-content .far:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
+.card-content .far {
+  display: block;
+}
+.card-content .fas:hover {
+  display: block;
 }
 
 .restaurant {
