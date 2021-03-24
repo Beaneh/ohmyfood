@@ -100,7 +100,7 @@ a {
 .card-content {
   padding: 15px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: auto 50px;
 
   .cards-title {
     font-size: 18px;
@@ -112,19 +112,37 @@ a {
     font-size: 16px;
     margin: 5px 0;
     }
+
+  span {
+    position: relative;
+
+    &:hover {
+      .far {
+        visibility: hidden;
+      }
+
+      .fas {
+        visibility: visible;
+      }
+    }
   
   .fas {
-    display: none;
+    visibility: hidden;
     position: absolute;
-    top: 1187px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .far {
-    display: block;
+  span {
+    width: 16px;
+    height: 17px;
   }
 
-  .fas:hover {
-    display: block;
   }
 }
 

@@ -147,7 +147,7 @@ a {
 .card-content {
   padding: 15px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: auto 50px;
 }
 .card-content .cards-title {
   font-size: 18px;
@@ -158,16 +158,29 @@ a {
   font-size: 16px;
   margin: 5px 0;
 }
-.card-content .fas {
-  display: none;
+.card-content span {
+  position: relative;
+}
+.card-content span:hover .far {
+  visibility: hidden;
+}
+.card-content span:hover .fas {
+  visibility: visible;
+}
+.card-content span .fas {
+  visibility: hidden;
   position: absolute;
-  top: 1187px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.card-content .far {
-  display: block;
-}
-.card-content .fas:hover {
-  display: block;
+.card-content span span {
+  width: 16px;
+  height: 17px;
 }
 
 .restaurant {
@@ -222,8 +235,27 @@ header a {
 }
 .title .icon {
   margin-top: 25px;
-  padding: 0 20px;
   font-size: 30px;
+}
+.title span {
+  position: relative;
+}
+.title span:hover .far {
+  visibility: hidden;
+}
+.title span:hover .fas {
+  visibility: visible;
+}
+.title span .fas {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 section {
