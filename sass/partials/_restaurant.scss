@@ -39,8 +39,33 @@ header {
 
   .icon {
       margin-top: 25px;
-      padding: 0 20px;
       font-size: 30px;
+  }
+
+  span {
+    position: relative;
+
+    &:hover {
+      .far {
+        visibility: hidden;
+      }
+
+      .fas {
+        visibility: visible;
+      }
+    }
+  
+  .fas {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   }
 }
 
