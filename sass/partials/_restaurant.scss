@@ -103,7 +103,7 @@ section {
       display: inline-block;
   }
 
-  span {
+  .price {
       font-weight: bold;
   }
 
@@ -112,6 +112,24 @@ section {
     border-radius: 20px;
     cursor: pointer;
     padding: 10px;
+    display: grid;
+    grid-template-columns: auto 50px;
+  }
+
+  .green-btn {
+    color: white;
+    background-color: #99E2D0;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+    visibility: hidden;
+
+    &:hover {
+      transition: 1s;
+      left: 0;
+      visibility: visible;
+    }
   }
 }
 

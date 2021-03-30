@@ -287,7 +287,7 @@ section p {
   margin: 0%;
   display: inline-block;
 }
-section span {
+section .price {
   font-weight: bold;
 }
 section .menu-card {
@@ -295,6 +295,22 @@ section .menu-card {
   border-radius: 20px;
   cursor: pointer;
   padding: 10px;
+  display: grid;
+  grid-template-columns: auto 50px;
+}
+section .green-btn {
+  color: white;
+  background-color: #99E2D0;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+  visibility: hidden;
+}
+section .green-btn:hover {
+  transition: 1s;
+  left: 0;
+  visibility: visible;
 }
 
 .order-btn {
