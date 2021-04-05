@@ -116,18 +116,44 @@ section {
     grid-template-columns: auto 50px;
   }
 
+  .menu-card-1 {
+    animation: menu-card 0.7s;
+  }
+
+  .menu-card-2 {
+    animation: menu-card 0.8s;
+  }
+
+  .menu-card-3 {
+    animation: menu-card 0.9s;
+  }
+
+  .menu-card-4 {
+    animation: menu-card 1s;
+  }
+
+  @keyframes menu-card {
+    0% {
+      transform: translate(0, 0);    
+    }
+    100% {
+      transform: translate(0px, -10px);
+    }
+  }
+
   .green-btn {
+    position: absolute;
     color: white;
     background-color: #99E2D0;
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 2s;
+    // -webkit-animation: slide 0.5s forwards;
+    // -webkit-animation-delay: 2s;
+    // animation: slide 0.5s forwards;
+    // animation-delay: 2s;
     visibility: hidden;
 
     &:hover {
-      transition: 1s;
-      left: 0;
+      // transition: 1s;
+      // left: 0;
       visibility: visible;
     }
   }
