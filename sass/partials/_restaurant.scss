@@ -105,6 +105,7 @@ section {
 
   .price {
       font-weight: bold;
+      width: 40px;
   }
 
   .menu-card {
@@ -112,24 +113,28 @@ section {
     border-radius: 20px;
     cursor: pointer;
     padding: 10px;
-    display: grid;
-    grid-template-columns: auto 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-desc {
+    width: auto;
   }
 
   .menu-card-1 {
-    animation: menu-card 0.7s;
+    animation: menu-card 0.7s ease-out;
   }
 
   .menu-card-2 {
-    animation: menu-card 0.8s;
+    animation: menu-card 0.8s ease-out;
   }
 
   .menu-card-3 {
-    animation: menu-card 0.9s;
+    animation: menu-card 0.9s ease-out;
   }
 
   .menu-card-4 {
-    animation: menu-card 1s;
+    animation: menu-card 1s ease-out;
   }
 
   @keyframes menu-card {
@@ -149,12 +154,17 @@ section {
     // -webkit-animation-delay: 2s;
     // animation: slide 0.5s forwards;
     // animation-delay: 2s;
-    visibility: hidden;
+    visibility: visible;
 
     &:hover {
       // transition: 1s;
       // left: 0;
       visibility: visible;
+
+      .fa-check-circle {
+        transition: 1s;
+        transform: rotateZ(360deg);
+      }
     }
   }
 }

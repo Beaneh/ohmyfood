@@ -289,26 +289,30 @@ section p {
 }
 section .price {
   font-weight: bold;
+  width: 40px;
 }
 section .menu-card {
   background-color: white;
   border-radius: 20px;
   cursor: pointer;
   padding: 10px;
-  display: grid;
-  grid-template-columns: auto 50px;
+  display: flex;
+  justify-content: space-between;
+}
+section .section-desc {
+  width: auto;
 }
 section .menu-card-1 {
-  animation: menu-card 0.7s;
+  animation: menu-card 0.7s ease-out;
 }
 section .menu-card-2 {
-  animation: menu-card 0.8s;
+  animation: menu-card 0.8s ease-out;
 }
 section .menu-card-3 {
-  animation: menu-card 0.9s;
+  animation: menu-card 0.9s ease-out;
 }
 section .menu-card-4 {
-  animation: menu-card 1s;
+  animation: menu-card 1s ease-out;
 }
 @keyframes menu-card {
   0% {
@@ -322,10 +326,14 @@ section .green-btn {
   position: absolute;
   color: white;
   background-color: #99E2D0;
-  visibility: hidden;
+  visibility: visible;
 }
 section .green-btn:hover {
   visibility: visible;
+}
+section .green-btn:hover .fa-check-circle {
+  transition: 1s;
+  transform: rotateZ(360deg);
 }
 
 .order-btn {
