@@ -285,11 +285,14 @@ section h3 {
 section p {
   padding: 5px 0px;
   margin: 0%;
-  display: inline-block;
 }
 section .price {
   font-weight: bold;
   width: 40px;
+}
+section .price-container {
+  display: flex;
+  flex-direction: row;
 }
 section .menu-card {
   background-color: white;
@@ -299,8 +302,12 @@ section .menu-card {
   display: flex;
   justify-content: space-between;
 }
-section .section-desc {
-  width: auto;
+section .menu-card:hover .green-btn {
+  width: 60px;
+}
+section .menu-card:hover .fa-check-circle {
+  transition: 1s;
+  transform: rotateZ(360deg);
 }
 section .menu-card-1 {
   animation: menu-card 0.7s ease-out;
@@ -323,17 +330,13 @@ section .menu-card-4 {
   }
 }
 section .green-btn {
-  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 0;
   color: white;
   background-color: #99E2D0;
-  visibility: visible;
-}
-section .green-btn:hover {
-  visibility: visible;
-}
-section .green-btn:hover .fa-check-circle {
-  transition: 1s;
-  transform: rotateZ(360deg);
 }
 
 .order-btn {
