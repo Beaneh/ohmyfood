@@ -131,7 +131,7 @@ section {
     &:hover {
       .green-btn {
         width: 60px;
-        animation-duration: 1s;
+        transition: 1s;
       }
       .fa-check-circle {
         transition: 0.5s;
@@ -141,15 +141,15 @@ section {
 
     @keyframes green-btn {
       0% {
-        transform: translate(0, 0);    
+        transform: scaleX(0);
       }
 
       50% {
-        transform: translate(-30px, 0px);
+        transform: scaleX(0.5);
       }
 
       100% {
-        transform: translate(-60px, 0px);
+        transform: scaleX(1);
       }
     }
   }
