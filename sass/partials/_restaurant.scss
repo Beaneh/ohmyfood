@@ -108,8 +108,9 @@ section {
 
   .price {
       font-weight: bold;
-      width: 40px;
+      width: 55px;
       padding: 10px;
+      align-self: flex-end;
   }
 
   .price-container {
@@ -127,15 +128,18 @@ section {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    height: 70px;
+    box-shadow: 0 0 10px lightgray;
 
     &:hover {
       .green-btn {
         width: 60px;
-        transition: 1s;
+        transition: 0.5s;
       }
       .fa-check-circle {
         transition: 0.5s;
         transform: rotateZ(360deg);
+        font-size: 20px;
       }
     }
 
@@ -155,27 +159,38 @@ section {
   }
 
   .menu-card-1 {
-    animation: menu-card 0.7s ease-out;
+    animation: menu-card 0.7s ease-in;
+    opacity: 1;
+    transform: opacity .7s ease-in;
   }
 
   .menu-card-2 {
-    animation: menu-card 0.8s ease-out;
+    animation: menu-card 0.8s ease-in;
+    opacity: 1;
+    transform: opacity .8s ease-in;
   }
 
   .menu-card-3 {
-    animation: menu-card 0.9s ease-out;
+    animation: menu-card 0.9s ease-in;
+    opacity: 1;
+    transform: opacity s ease-in;
   }
 
   .menu-card-4 {
-    animation: menu-card 1s ease-out;
+    animation: menu-card 1s ease-in;
+    opacity: 1;
+    transform: opacity 1s ease-in;
   }
 
   @keyframes menu-card {
     0% {
-      transform: translate(0, 0);    
+      transform: translate(0, 0);
+      opacity: 0;
     }
+
     100% {
       transform: translate(0px, -10px);
+      opacity: 1;
     }
   }
 
