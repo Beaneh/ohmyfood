@@ -344,7 +344,7 @@ section .menu-card-2 {
 section .menu-card-3 {
   animation: menu-card 0.9s ease-in;
   opacity: 1;
-  transform: opacity s ease-in;
+  transform: opacity 0.9s ease-in;
 }
 section .menu-card-4 {
   animation: menu-card 1s ease-in;
