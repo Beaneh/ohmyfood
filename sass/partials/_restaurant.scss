@@ -131,6 +131,18 @@ section {
     height: 70px;
     box-shadow: 0 0 10px lightgray;
 
+    .green-btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 0;
+      color: white;
+      background-color: #99E2D0;
+      padding: 0;
+      transition: all 450ms;
+    }
+
     &:hover {
       .green-btn {
         width: 60px;
@@ -159,37 +171,84 @@ section {
   }
 
   .menu-card-1 {
-    animation: menu-card 0.7s ease-in;
-    opacity: 1;
-    transform: opacity .7s ease-in;
+    animation: menu-card-1 1s ease-out;
+    transform: opacity 1s ease-out;
   }
 
-  .menu-card-2 {
-    animation: menu-card 0.8s ease-in;
-    opacity: 1;
-    transform: opacity .8s ease-in;
-  }
-
-  .menu-card-3 {
-    animation: menu-card 0.9s ease-in;
-    opacity: 1;
-    transform: opacity .9s ease-in;
-  }
-
-  .menu-card-4 {
-    animation: menu-card 1s ease-in;
-    opacity: 1;
-    transform: opacity 1s ease-in;
-  }
-
-  @keyframes menu-card {
+  @keyframes menu-card-1 {
     0% {
-      transform: translate(0, 0);
+      transform: translate(0, 20px);
       opacity: 0;
     }
 
     100% {
-      transform: translate(0px, -10px);
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  .menu-card-2 {
+    animation: menu-card-2 1.2s ease-out;
+    transform: opacity 1.2s ease-out;
+  }
+
+  @keyframes menu-card-2 {
+    0% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+
+    17% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  .menu-card-3 {
+    animation: menu-card-3 1.4s ease-out;
+    transform: opacity 1.4s ease-out;
+  }
+
+  @keyframes menu-card-3 {
+    0% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+
+    29% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  .menu-card-4 {
+    animation: menu-card-4 1.6s ease-out;
+    transform: opacity 1.6s ease-out;
+  }
+
+  @keyframes menu-card-4 {
+    0% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+
+    38% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0px);
       opacity: 1;
     }
   }
